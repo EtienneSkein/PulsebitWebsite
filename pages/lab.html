@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pulsebit Lab is a software development company building custom software, web applications, APIs, business automation and systems integration."
+    />
+    <title>Pulsebit Lab | Custom Software Development & Digital Infrastructure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css?v=service-buttons-grid-aligned" />
+  </head>
+  <body class="lab-page" data-mode="software">
+    <div class="grain" aria-hidden="true"></div>
+    <canvas id="pulse-field" aria-hidden="true"></canvas>
+    <div class="level-transition" id="levelTransition" aria-hidden="true">
+      <div class="level-transition-panel">
+        <span class="level-kicker">Entering</span>
+        <strong>Next Level</strong>
+        <p>Loading Pulsebit path</p>
+      </div>
+      <div class="level-transition-grid"></div>
+    </div>
+
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="../index.html" aria-label="Pulsebit home">
+        <img class="brand-logo" src="../assets/pulsebitlogo.png" alt="" />
+      </a>
+      <button class="menu-button" id="menuToggle" aria-expanded="false" aria-controls="menuOverlay">
+        <span></span>
+        <span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+    </header>
+
+    <nav class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <div class="menu-shell">
+        <a href="../index.html?v=dock-safe-zone">Pulse</a>
+        <a href="agency.html?v=dock-safe-zone">Agency</a>
+        <a href="#contact">Discovery</a>
+        <a href="work-with-us.html?v=become-agent">Become an agent</a>
+      </div>
+      <div class="menu-meta">
+        <p>Custom software development, web application development, API development, business automation and systems integration.</p>
+      </div>
+    </nav>
+
+    <nav class="path-dock" aria-label="Quick path navigation">
+      <button class="path-dock-handle" type="button" aria-label="Drag navigation">::</button>
+      <div class="path-dock-links">
+        <a href="../index.html?v=dock-safe-zone" data-path="pulse"><span>Pulse</span></a>
+        <a href="agency.html?v=dock-safe-zone" data-path="agency"><span>Agency</span></a>
+        <a href="lab.html?v=dock-safe-zone" data-path="lab" aria-current="page"><span>Lab</span></a>
+        <a href="#contact" data-path="discovery"><span>Discovery</span></a>
+      </div>
+      <button class="path-dock-toggle" type="button" aria-label="Minimize navigation" aria-expanded="true">-</button>
+    </nav>
+
+    <main>
+      <section class="page-hero lab-hero">
+        <p class="eyebrow">Custom Software & Digital Infrastructure</p>
+        <h1>Build what your business actually needs.</h1>
+        <p>
+          Sometimes the software you need simply does not exist. Sometimes you have too
+          many tools doing jobs that should really be handled by one.
+        </p>
+      </section>
+
+      <section class="section arcade-zone" id="arcade">
+        <div class="section-heading">
+          <p class="eyebrow">Pulsebit Arcade</p>
+          <h2 class="kinetic">Two quick games. One Lab break.</h2>
+        </div>
+
+        <div class="arcade-grid">
+        <div class="pulsewidth-launch">
+          <div>
+            <p class="stack-label">Pulsebit Switch</p>
+            <h3>Slide the signal back into place.</h3>
+            <p>
+              Pick a logo variant, choose your grid, and rebuild the Pulsebit mark before the
+              leaderboard takes your lunch money.
+            </p>
+          </div>
+          <button type="button" class="pulsewidth-play-button" data-puzzle-open>
+            Play Pulsebit switch game
+          </button>
+        </div>
+
+        <div class="puzzle-modal" data-puzzle-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pulsebit-switch-title">
+          <div class="puzzle-modal-panel">
+            <div class="puzzle-modal-header">
+              <div>
+                <p class="stack-label">Pulsebit Switch</p>
+                <h3 id="pulsebit-switch-title">Rebuild the signal.</h3>
+              </div>
+              <button type="button" class="puzzle-modal-close" data-puzzle-close aria-label="Close Pulsebit switch game">Close</button>
+            </div>
+
+            <div class="pulsewidth-shell sliding-puzzle" data-sliding-puzzle aria-label="Pulsebit sliding puzzle game">
+              <div class="puzzle-controls">
+                <div>
+                  <span class="stack-label">Grid</span>
+                  <div class="puzzle-size-options" aria-label="Choose puzzle size">
+                    <button type="button" data-puzzle-size="3" class="is-active">3x3</button>
+                    <button type="button" data-puzzle-size="4">4x4</button>
+                    <button type="button" data-puzzle-size="5">5x5</button>
+                  </div>
+                </div>
+                <div>
+                  <span class="stack-label">Logo variant</span>
+                  <div class="puzzle-image-options" aria-label="Choose puzzle image">
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-01.jpeg" class="is-active">
+                      <img src="../assets/puzzles/pulsebit-puzzle-01.jpeg" alt="Pulsebit orange logo puzzle option" />
+                    </button>
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-02.jpeg">
+                      <img src="../assets/puzzles/pulsebit-puzzle-02.jpeg" alt="Pulsebit green logo puzzle option" />
+                    </button>
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-03.jpeg">
+                      <img src="../assets/puzzles/pulsebit-puzzle-03.jpeg" alt="Pulsebit orange and green logo puzzle option" />
+                    </button>
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-04.jpeg">
+                      <img src="../assets/puzzles/pulsebit-puzzle-04.jpeg" alt="Pulsebit wordmark puzzle option" />
+                    </button>
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-05.jpeg">
+                      <img src="../assets/puzzles/pulsebit-puzzle-05.jpeg" alt="Pulsebit black logo puzzle option" />
+                    </button>
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-06.jpeg">
+                      <img src="../assets/puzzles/pulsebit-puzzle-06.jpeg" alt="Pulsebit lime logo puzzle option" />
+                    </button>
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-07.jpeg">
+                      <img src="../assets/puzzles/pulsebit-puzzle-07.jpeg" alt="Pulsebit wordmark gradient puzzle option" />
+                    </button>
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-08.jpeg">
+                      <img src="../assets/puzzles/pulsebit-puzzle-08.jpeg" alt="Pulsebit purple logo puzzle option" />
+                    </button>
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-09.jpeg">
+                      <img src="../assets/puzzles/pulsebit-puzzle-09.jpeg" alt="Pulsebit black logo ripple puzzle option" />
+                    </button>
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-10.jpeg">
+                      <img src="../assets/puzzles/pulsebit-puzzle-10.jpeg" alt="Pulsebit lime on black puzzle option" />
+                    </button>
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-11.jpeg">
+                      <img src="../assets/puzzles/pulsebit-puzzle-11.jpeg" alt="Pulsebit lime on white puzzle option" />
+                    </button>
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-12.jpeg">
+                      <img src="../assets/puzzles/pulsebit-puzzle-12.jpeg" alt="Pulsebit orange logo alternate puzzle option" />
+                    </button>
+                    <button type="button" data-puzzle-image="../assets/puzzles/pulsebit-puzzle-13.jpeg">
+                      <img src="../assets/puzzles/pulsebit-puzzle-13.jpeg" alt="Pulsebit wordmark on black puzzle option" />
+                    </button>
+                  </div>
+                </div>
+                <div class="puzzle-actions">
+                  <button type="button" data-puzzle-shuffle>Shuffle</button>
+                  <button type="button" data-puzzle-reset>Reset</button>
+                </div>
+              </div>
+
+              <div class="puzzle-playfield">
+                <div class="puzzle-board-wrap">
+                  <div class="puzzle-board" data-puzzle-board aria-label="Sliding puzzle board"></div>
+                </div>
+                <aside class="puzzle-hud">
+                  <img src="../assets/puzzles/pulsebit-puzzle-01.jpeg" alt="Puzzle reference preview" data-puzzle-preview />
+                  <div>
+                    <span>Moves</span>
+                    <strong data-puzzle-moves>0</strong>
+                  </div>
+                  <div>
+                    <span>Time</span>
+                    <strong data-puzzle-time>00:00</strong>
+                  </div>
+                  <div>
+                    <span>Status</span>
+                    <strong data-puzzle-status>Choose a tile next to the empty slot.</strong>
+                  </div>
+                  <div class="puzzle-leaderboard">
+                    <span>Leaderboard</span>
+                    <ol data-puzzle-leaderboard>
+                      <li>No completed runs yet.</li>
+                    </ol>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pulsewidth-launch pacman-launch">
+          <div>
+            <p class="stack-label">Pulse-Maze</p>
+            <h3>Collect the signal dots. Dodge the blockers.</h3>
+            <p>
+              A tiny arcade break for the Lab: guide the Pulsebit byte through the grid, collect
+              every node, and keep the system blockers off your trail.
+            </p>
+          </div>
+          <button type="button" class="pulsewidth-play-button pacman-play-button" data-pacman-open>
+            Play Pulsebit pac game
+          </button>
+        </div>
+        </div>
+
+        <div class="puzzle-modal pacman-modal" data-pacman-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pulse-maze-title">
+          <div class="puzzle-modal-panel pacman-modal-panel">
+            <div class="puzzle-modal-header">
+              <div>
+                <p class="stack-label">Pulse-Maze</p>
+                <h3 id="pulse-maze-title">Keep the signal alive.</h3>
+              </div>
+              <button type="button" class="puzzle-modal-close" data-pacman-close aria-label="Close Pulsebit pac game">Close</button>
+            </div>
+
+            <div class="pacman-shell" data-pacman-game>
+              <div class="pacman-board-wrap">
+                <canvas width="560" height="560" data-pacman-canvas aria-label="Pulsebit pac game board"></canvas>
+              </div>
+              <aside class="pacman-hud">
+                <div>
+                  <span>Score</span>
+                  <strong data-pacman-score>0</strong>
+                </div>
+                <div>
+                  <span>Lives</span>
+                  <strong data-pacman-lives>3</strong>
+                </div>
+                <div>
+                  <span>Status</span>
+                  <strong data-pacman-status>Press start, then use arrow keys or the controls.</strong>
+                </div>
+                <div class="pacman-actions">
+                  <button type="button" data-pacman-start>Start</button>
+                  <button type="button" data-pacman-pause>Pause</button>
+                  <button type="button" data-pacman-reset>Reset</button>
+                </div>
+                <div class="pacman-dpad" aria-label="Pulsebit pac game direction controls">
+                  <button type="button" data-pacman-dir="up" aria-label="Move up">W</button>
+                  <button type="button" data-pacman-dir="left" aria-label="Move left">A</button>
+                  <button type="button" data-pacman-dir="down" aria-label="Move down">S</button>
+                  <button type="button" data-pacman-dir="right" aria-label="Move right">D</button>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section martech" id="architecture">
+        <div class="section-heading">
+          <p class="eyebrow">Software Build Console</p>
+          <h2 class="kinetic">Choose the friction. See the build.</h2>
+        </div>
+
+        <div class="build-console" aria-label="Interactive Pulsebit software build console">
+          <aside class="build-menu">
+            <p class="stack-label">What is getting in the way?</p>
+            <button class="build-option is-active" type="button" data-workflow="mail">
+              <span>01</span>
+              Inbox work is becoming invisible
+            </button>
+            <button class="build-option" type="button" data-workflow="sheet">
+              <span>02</span>
+              Spreadsheets are carrying too much
+            </button>
+            <button class="build-option" type="button" data-workflow="crm">
+              <span>03</span>
+              Sales context is scattered
+            </button>
+            <button class="build-option" type="button" data-workflow="chat">
+              <span>04</span>
+              Team requests live in chat
+            </button>
+            <button class="build-option" type="button" data-workflow="form">
+              <span>05</span>
+              Leads need cleaner routing
+            </button>
+          </aside>
+
+          <section class="build-display">
+            <div class="build-display-topline">
+              <span data-engine-mode>Workflow cockpit</span>
+              <span>Pulsebit Lab</span>
+            </div>
+            <h3 data-workflow-title>Structured intake system</h3>
+            <p data-workflow-summary>
+              Turn inbox requests into a visible workflow with ownership, context and next actions.
+            </p>
+
+            <div class="build-flow" aria-label="Recommended build sequence">
+              <span data-step="one">Capture</span>
+              <span data-step="two">Classify</span>
+              <span data-step="three">Assign</span>
+              <span data-step="four">Track</span>
+            </div>
+          </section>
+
+          <aside class="build-output">
+            <p class="stack-label">What we would build</p>
+            <ul>
+              <li data-output="one">A shared intake dashboard</li>
+              <li data-output="two">Assignment rules and notifications</li>
+              <li data-output="three">A record of every open request</li>
+            </ul>
+            <div class="build-spec">
+              <span>Likely components</span>
+              <strong data-build-type>Portal + API + automation</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section service-duo">
+        <article class="service-panel mechanical service-explainer">
+          <div class="service-explainer-copy">
+            <p class="eyebrow">Build Scope</p>
+            <h2>Custom software that fits the business.</h2>
+            <p>Web applications, portals, internal tools, dashboards, API development, business automation and systems integration.</p>
+          </div>
+          <button class="service-explainer-toggle" type="button" data-service-explain aria-expanded="false" aria-controls="build-scope-details">
+            What does this mean?
+          </button>
+          <div class="service-explainer-details" id="build-scope-details" hidden>
+            <p>
+              Build scope is where we decide what the software actually needs to do. We look at the workflow, the users, the data, the systems it must connect to and the jobs it should remove from the team.
+            </p>
+            <ul>
+              <li>Define the core screens, roles and permissions.</li>
+              <li>Map the APIs, automations and integrations needed.</li>
+              <li>Separate must-have features from later improvements.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="service-panel mechanical service-explainer">
+          <div class="service-explainer-copy">
+            <p class="eyebrow">Engineering Method</p>
+            <h2>Architecture before polish.</h2>
+            <p>We scope the data model, permissions, APIs, observability and deployment path before anything gets dressed up.</p>
+          </div>
+          <button class="service-explainer-toggle" type="button" data-service-explain aria-expanded="false" aria-controls="engineering-method-details">
+            What does this mean?
+          </button>
+          <div class="service-explainer-details" id="engineering-method-details" hidden>
+            <p>
+              Engineering method is how we keep the build useful after launch. Before the interface gets polished, we make sure the structure underneath can handle real users, real data and future changes.
+            </p>
+            <ul>
+              <li>Design the data model before building screens.</li>
+              <li>Plan security, deployment and error visibility early.</li>
+              <li>Build in small working releases instead of one big reveal.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow">Lab Discovery</p>
+          <h2>Show us the workflow that needs better software.</h2>
+        </div>
+        <form class="discovery-form" id="discoveryForm">
+          <label>
+            I need help with
+            <select name="intent">
+              <option value="software">software, automation, or infrastructure</option>
+              <option value="both">software plus campaign intelligence</option>
+            </select>
+          </label>
+          <label>
+            Current stage
+            <select name="stage">
+              <option>Exploring architecture</option>
+              <option>Ready to scope</option>
+              <option>Need rescue or rebuild</option>
+            </select>
+          </label>
+          <label>
+            Work email
+            <input type="email" name="email" placeholder="name@company.com" />
+          </label>
+          <button type="submit">Start lab discovery</button>
+          <p class="form-response" role="status"></p>
+        </form>
+        <div class="social-links" aria-label="Pulsebit social accounts">
+          <a href="https://www.instagram.com/pulsebit" target="_blank" rel="noopener noreferrer" aria-label="Pulsebit on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" />
+            </svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.linkedin.com/company/pulsebit" target="_blank" rel="noopener noreferrer" aria-label="Pulsebit on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 9h4v11H4z" />
+              <path d="M6 4.5a2.1 2.1 0 1 1 0 4.2 2.1 2.1 0 0 1 0-4.2z" />
+              <path d="M10.5 9h3.8v1.6c.7-1 1.8-1.9 3.6-1.9 2.7 0 4.1 1.8 4.1 5.1V20h-4v-5.5c0-1.5-.5-2.4-1.8-2.4-1.2 0-1.8.8-1.8 2.4V20h-3.9z" />
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://www.facebook.com/pulsebit" target="_blank" rel="noopener noreferrer" aria-label="Pulsebit on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 8h3V4h-3.4C10.4 4 9 6 9 8.9V11H6v4h3v5h4v-5h3.2l.8-4h-4V9.2c0-.8.3-1.2 1-1.2z" />
+            </svg>
+            <span>Facebook</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><span aria-hidden="true">&copy;</span> 2026 Pulsebit (Pty) Ltd. All rights reserved.</p>
+      <nav aria-label="Legal links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </footer>
+
+    <script src="../js/script.js?v=service-buttons-grid-aligned"></script>
+  </body>
+</html>

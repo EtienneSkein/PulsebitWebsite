@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Become an agent for Pulsebit. Share your details, links, and a short message for the Pulsebit team."
+    />
+    <title>Become an Agent | Pulsebit Digital Ecosystem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css?v=become-agent" />
+  </head>
+  <body class="work-page" data-mode="neutral">
+    <div class="grain" aria-hidden="true"></div>
+    <canvas id="pulse-field" aria-hidden="true"></canvas>
+    <div class="level-transition" id="levelTransition" aria-hidden="true">
+      <div class="level-transition-panel">
+        <span class="level-kicker">Entering</span>
+        <strong>Next Level</strong>
+        <p>Loading Pulsebit path</p>
+      </div>
+      <div class="level-transition-grid"></div>
+    </div>
+
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="../index.html" aria-label="Pulsebit home">
+        <img class="brand-logo" src="../assets/pulsebitlogo.png" alt="" />
+      </a>
+      <button class="menu-button" id="menuToggle" aria-expanded="false" aria-controls="menuOverlay">
+        <span></span>
+        <span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+    </header>
+
+    <nav class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <div class="menu-shell">
+        <a href="../index.html?v=dock-safe-zone">Pulse</a>
+        <a href="agency.html?v=dock-safe-zone">Agency</a>
+        <a href="lab.html?v=dock-safe-zone">Lab</a>
+        <a href="agency.html?v=dock-safe-zone#contact">Discovery</a>
+        <a href="work-with-us.html?v=become-agent" aria-current="page">Become an agent</a>
+      </div>
+      <div class="menu-meta">
+        <p>Tell us who you are, where we can find your work, and how you want to collaborate.</p>
+      </div>
+    </nav>
+
+    <nav class="path-dock" aria-label="Quick path navigation">
+      <button class="path-dock-handle" type="button" aria-label="Drag navigation">::</button>
+      <div class="path-dock-links">
+        <a href="../index.html?v=dock-safe-zone" data-path="pulse"><span>Pulse</span></a>
+        <a href="agency.html?v=dock-safe-zone" data-path="agency"><span>Agency</span></a>
+        <a href="lab.html?v=dock-safe-zone" data-path="lab"><span>Lab</span></a>
+        <a href="work-with-us.html?v=become-agent" data-path="work" aria-current="page"><span>Agent</span></a>
+      </div>
+      <button class="path-dock-toggle" type="button" aria-label="Minimize navigation" aria-expanded="true">-</button>
+    </nav>
+
+    <main>
+      <section class="page-hero work-hero">
+        <p class="eyebrow">Become an agent</p>
+        <h1>The next level needs new operators.</h1>
+        <p>
+          Share the essentials and add any links or context you want us to see. The form will
+          prepare an email to Pulsebit with your details.
+        </p>
+      </section>
+
+      <section class="section work-intake">
+        <div>
+          <p class="eyebrow">Applicant Intake</p>
+          <h2>Step beyond the interface.</h2>
+        </div>
+
+        <form class="discovery-form work-form" id="workWithUsForm">
+          <label>
+            Name *
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Surname *
+            <input type="text" name="surname" placeholder="Your surname" required />
+          </label>
+          <label>
+            Cell *
+            <input type="tel" name="cell" placeholder="+27 00 000 0000" required />
+          </label>
+          <label>
+            GitHub account
+            <input type="url" name="github" placeholder="https://github.com/username" />
+          </label>
+          <label>
+            LinkedIn
+            <input type="url" name="linkedin" placeholder="https://linkedin.com/in/username" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="6" placeholder="Add anything you want Pulsebit to know."></textarea>
+          </label>
+          <button type="submit">Prepare email to Pulsebit</button>
+          <p class="form-response" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><span aria-hidden="true">&copy;</span> 2026 Pulsebit (Pty) Ltd. All rights reserved.</p>
+      <nav aria-label="Legal links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </footer>
+
+    <script src="../js/script.js?v=become-agent"></script>
+  </body>
+</html>

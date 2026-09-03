@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pulsebit is a boutique digital agency combining digital marketing, creative strategy and custom software development to help businesses grow and work smarter."
+    />
+    <title>Pulsebit | Boutique Digital Agency & Custom Software Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=client-copy-refresh" />
+  </head>
+  <body class="landing-page">
+    <div class="grain" aria-hidden="true"></div>
+    <canvas id="pulse-field" aria-hidden="true"></canvas>
+    <div class="level-transition" id="levelTransition" aria-hidden="true">
+      <div class="level-transition-panel">
+        <span class="level-kicker">Entering</span>
+        <strong>Next Level</strong>
+        <p>Loading Pulsebit path</p>
+      </div>
+      <div class="level-transition-grid"></div>
+    </div>
+
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Pulsebit home">
+        <img class="brand-logo" src="assets/pulsebitlogo.png" alt="" />
+      </a>
+      <button class="menu-button" id="menuToggle" aria-expanded="false" aria-controls="menuOverlay">
+        <span></span>
+        <span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+    </header>
+
+    <nav class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <div class="menu-shell">
+        <a href="pages/agency.html?v=dock-safe-zone">Agency</a>
+        <a href="pages/lab.html?v=dock-safe-zone">Lab</a>
+        <a href="pages/agency.html?v=dock-safe-zone#contact">Discovery</a>
+        <a href="pages/work-with-us.html?v=become-agent">Become an agent</a>
+      </div>
+      <div class="menu-meta">
+        <p>Boutique digital agency for digital marketing, creative strategy and custom software development.</p>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero split-hero" aria-labelledby="hero-title">
+        <div class="split-intro" aria-label="Choose your Pulsebit path">
+          <p>Welcome to Pulsebit</p>
+          <span>Choose your path</span>
+        </div>
+
+        <a class="hero-half hero-marketing" href="pages/agency.html?v=dock-safe-zone" data-mode-link="marketing">
+          <div class="half-atmosphere" aria-hidden="true"></div>
+          <div class="half-content">
+            <p class="eyebrow">Digital Marketing Agency</p>
+            <h1 id="hero-title">High emotion.</h1>
+            <p>
+              For brands that need sharper digital marketing, stronger creative ideas and
+              campaigns that give the right people a reason to care.
+            </p>
+            <span class="half-cta">Explore the Agency</span>
+          </div>
+        </a>
+
+        <div class="heartbeat-divider" aria-hidden="true">
+          <svg viewBox="0 0 120 760" preserveAspectRatio="none">
+            <path class="heartbeat-guide"
+              d="M60 0 L60 214 L37 214 L78 256 L46 296 L60 296 L60 376 L60 424 L82 424 L41 468 L74 508 L60 508 L60 760"
+            />
+            <path class="heartbeat-rail" d="M60 0 L60 760" />
+            <path class="heartbeat-pulse" d="M60 -220 L60 -108 L54 -92 L66 -78 L34 -48 L94 -10 L46 22 L60 50 L60 170" />
+          </svg>
+        </div>
+
+        <a class="hero-half hero-software" href="pages/lab.html?v=dock-safe-zone" data-mode-link="software">
+          <div class="half-atmosphere" aria-hidden="true"></div>
+          <div class="half-content">
+            <p class="eyebrow">Custom Software Development</p>
+            <h2>Hard logic.</h2>
+            <p>
+              For teams that have outgrown off-the-shelf tools and need custom software,
+              APIs or automation built around how the work really happens.
+            </p>
+            <span class="half-cta">Explore the Lab</span>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <script src="js/script.js?v=pulse-copy-descriptions"></script>
+  </body>
+</html>
