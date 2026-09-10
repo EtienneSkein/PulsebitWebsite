@@ -1156,7 +1156,10 @@ serviceExplainButtons.forEach((button) => {
 
     const isOpen = button.getAttribute("aria-expanded") === "true";
     button.setAttribute("aria-expanded", String(!isOpen));
-    button.textContent = isOpen ? "What does this mean?" : "Hide explanation";
+    /* FAQ toggles keep their question as the label; service panels swap it. */
+    if (!button.hasAttribute("data-keep-label")) {
+      button.textContent = isOpen ? "What does this mean?" : "Hide explanation";
+    }
     details.hidden = isOpen;
   });
 });
