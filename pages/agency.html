@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/styles.css?v=client-copy-refresh" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body class="agency-page" data-mode="marketing">
     <div class="grain" aria-hidden="true"></div>
@@ -30,7 +30,7 @@
 
     <header class="site-header" aria-label="Primary">
       <a class="brand" href="../index.html" aria-label="Pulsebit home">
-        <img class="brand-logo" src="../assets/pulsebitlogo.png" alt="" />
+        <img class="brand-logo" src="/assets/pulsebitlogo.png" alt="" />
       </a>
       <button class="menu-button" id="menuToggle" aria-expanded="false" aria-controls="menuOverlay">
         <span></span>
@@ -74,8 +74,8 @@
 
       <section class="section agency-reel" aria-label="Creative media reel">
         <article class="reel-card reel-video reel-large">
-          <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80">
-            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+          <video autoplay muted loop playsinline poster="/assets/media/campaign-portrait-03.jpeg">
+            <source src="/assets/media/campaign-reel.mp4" type="video/mp4" />
           </video>
           <div>
             <span>Motion Direction</span>
@@ -83,37 +83,34 @@
           </div>
         </article>
         <article class="reel-card reel-still">
-          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="Editorial fashion campaign placeholder" />
+          <img src="/assets/media/campaign-portrait-05.jpeg" alt="Model in a printed maxi dress and sun hat photographed on a tiled terrace" loading="lazy" />
           <span>Editorial Still</span>
         </article>
         <article class="reel-card reel-still">
-          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Creative studio planning placeholder" />
+          <img src="/assets/media/campaign-portrait-08.jpeg" alt="Campaign styling detail from the Pulsebit shoot" loading="lazy" />
           <span>Studio System</span>
         </article>
-        <article class="reel-card reel-video">
-          <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80">
-            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
-            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
-          </video>
+        <article class="reel-card reel-still">
+          <img src="/assets/media/campaign-wide-01.jpeg" alt="Close-up of campaign accessories and styling detail" loading="lazy" />
           <span>Content Loop</span>
         </article>
       </section>
 
       <section class="section creative-showcase">
         <article>
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Strategy workshop placeholder" />
+          <img src="/assets/media/campaign-portrait-01.jpeg" alt="Campaign photography used to shape positioning and launch narrative" loading="lazy" />
           <span>Strategy</span>
           <h2>Digital marketing strategy with a point of view.</h2>
           <p>Market research, funnel audits, offer structure and launch narratives.</p>
         </article>
         <article>
-          <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=80" alt="Colorful creative production placeholder" />
+          <img src="/assets/media/campaign-portrait-04.jpeg" alt="Art directed fashion campaign frame in pink and red" loading="lazy" />
           <span>Creative</span>
           <h2>Creative marketing people can actually remember.</h2>
           <p>Identity systems, landing pages, launch assets, content series and video direction.</p>
         </article>
         <article>
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Campaign analytics dashboard placeholder" />
+          <img src="/assets/media/campaign-wide-02.jpeg" alt="Wide campaign frame used across paid social placements" loading="lazy" />
           <span>Performance</span>
           <h2>Performance marketing that stays close to the numbers.</h2>
           <p>GTM events, conversion experiments, campaign dashboards and executive reporting.</p>
@@ -127,22 +124,188 @@
         </div>
         <div class="portfolio-grid">
           <article class="case-card tall">
-            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80" alt="Premium campaign launch placeholder" />
+            <img src="/assets/media/campaign-portrait-10.jpeg" alt="Hero campaign image from a premium service launch" loading="lazy" />
             <span>Creative + Data</span>
             <h3>Premium service launch</h3>
             <p>Messaging, landing experience and paid media feedback.</p>
           </article>
           <article class="case-card">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Brand repositioning placeholder" />
+            <img src="/assets/media/campaign-portrait-06.jpeg" alt="Brand campaign frame used in a category repositioning" loading="lazy" />
             <span>Brand</span>
             <h3>Category repositioning</h3>
             <p>New narrative, visual identity and executive sales material.</p>
           </article>
           <article class="case-card">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Content growth library placeholder" />
+            <img src="/assets/media/campaign-portrait-09.jpeg" alt="Content series frame from an always-on campaign library" loading="lazy" />
             <span>Content</span>
             <h3>Always-on growth library</h3>
             <p>Content pillars, campaign templates and analytics feedback.</p>
+          </article>
+        </div>
+      </section>
+
+
+      <section class="section engage" id="engagements">
+        <div class="section-heading">
+          <p class="eyebrow">Engagement Models</p>
+          <h2 class="kinetic">Four ways to work with the agency.</h2>
+        </div>
+        <div class="engage-grid">
+          <article class="engage-card">
+            <p class="engage-index">01</p>
+            <h3>Campaign sprint</h3>
+            <p>One defined push with a start date and an end date. Strategy, creative and media built around a single moment.</p>
+            <ul>
+              <li>Messaging and creative concept</li>
+              <li>Assets across the channels that matter</li>
+              <li>Performance read at the end</li>
+            </ul>
+            <p class="engage-fit"><strong>Best when</strong> you have a launch, a season or an event to land.</p>
+          </article>
+          <article class="engage-card">
+            <p class="engage-index">02</p>
+            <h3>Always-on retainer</h3>
+            <p>A standing monthly rhythm of strategy, content and paid media, with reporting you can take into a board meeting.</p>
+            <ul>
+              <li>Monthly content and campaign calendar</li>
+              <li>Paid media managed and optimised</li>
+              <li>Fixed reporting cadence</li>
+            </ul>
+            <p class="engage-fit"><strong>Best when</strong> growth needs to compound rather than spike.</p>
+          </article>
+          <article class="engage-card">
+            <p class="engage-index">03</p>
+            <h3>Brand and creative project</h3>
+            <p>Identity, messaging, landing experience and launch assets, delivered as a project with a clear finish line.</p>
+            <ul>
+              <li>Positioning and messaging platform</li>
+              <li>Identity and campaign art direction</li>
+              <li>Landing pages and launch assets</li>
+            </ul>
+            <p class="engage-fit"><strong>Best when</strong> the story is the bottleneck, not the budget.</p>
+          </article>
+          <article class="engage-card">
+            <p class="engage-index">04</p>
+            <h3>Marketing audit</h3>
+            <p>A review of your funnel, tracking, creative and spend, delivered as a written findings report with a ranked fix list.</p>
+            <ul>
+              <li>Where the funnel is leaking</li>
+              <li>Whether tracking is telling the truth</li>
+              <li>What to change first, in order</li>
+            </ul>
+            <p class="engage-fit"><strong>Best when</strong> the spend is going out and you cannot see what it bought.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process" id="process">
+        <div class="section-heading">
+          <p class="eyebrow">Delivery Sequence</p>
+          <h2 class="kinetic">How a campaign actually runs.</h2>
+        </div>
+        <ol class="process-list">
+          <li class="process-step">
+            <span class="process-index">01</span>
+            <div>
+              <h3>Positioning and audience</h3>
+              <p>Who we are actually talking to, what they already believe about your category and what the offer really is. Most campaigns that fail were aimed at everyone.</p>
+              <span class="process-output">Output: messaging platform</span>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-index">02</span>
+            <div>
+              <h3>Channel and funnel plan</h3>
+              <p>Which platforms, what each one is there to do, and how someone moves from first seeing you to making contact. A channel without a job attached is just spend.</p>
+              <span class="process-output">Output: channel and funnel plan</span>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-index">03</span>
+            <div>
+              <h3>Creative production</h3>
+              <p>Copy, design, video cuts and landing pages, built to be tested rather than admired. Several angles go out, not one perfect execution.</p>
+              <span class="process-output">Output: campaign assets</span>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-index">04</span>
+            <div>
+              <h3>Launch and measure</h3>
+              <p>Tracking is set up before any money is spent, and what counts as a conversion is agreed before the first ad runs. Otherwise you are guessing in retrospect.</p>
+              <span class="process-output">Output: live campaign with tracking</span>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-index">05</span>
+            <div>
+              <h3>Read, cut and scale</h3>
+              <p>We stop what is not working, put budget behind what is, and report it in terms of enquiries and revenue rather than impressions.</p>
+              <span class="process-output">Output: monthly performance read</span>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">Straight Answers</p>
+          <h2 class="kinetic">The questions people actually ask.</h2>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item">
+            <button class="service-explainer-toggle faq-toggle" type="button" data-service-explain data-keep-label aria-expanded="false" aria-controls="faq-agency-cost">
+              What does a campaign or retainer cost?
+            </button>
+            <div class="service-explainer-details" id="faq-agency-cost" hidden>
+              <p>It moves with how many channels you are running, how much original creative each one needs, whether video is involved and how often you want reporting. A single-channel launch and an always-on programme across four platforms are different problems.</p>
+              <p>Our fee and your advertising budget are quoted separately, so you can always see what you are paying us and what is going to the platforms.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="service-explainer-toggle faq-toggle" type="button" data-service-explain data-keep-label aria-expanded="false" aria-controls="faq-agency-timeline">
+              How long before we see results?
+            </button>
+            <div class="service-explainer-details" id="faq-agency-timeline" hidden>
+              <p>Paid media gives you signal quickly. Within the first few weeks you should know which audiences and which creative angles are worth more budget, even if the numbers are still small.</p>
+              <p>Brand, content and organic search work differently. They compound over months and they are not the right place to look for a fast answer. We will tell you upfront which of the two your goal actually needs.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="service-explainer-toggle faq-toggle" type="button" data-service-explain data-keep-label aria-expanded="false" aria-controls="faq-agency-inhouse">
+              Can we just do this in-house?
+            </button>
+            <div class="service-explainer-details" id="faq-agency-inhouse" hidden>
+              <p>Often, yes. If someone on your team has the time and the instinct for it, running your own channels keeps you close to your customers, and that is worth a lot.</p>
+              <p>Bringing us in makes sense when the work keeps slipping down someone's list, when the spend has grown past the point of guessing, or when you need creative volume that a single person cannot produce.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="service-explainer-toggle faq-toggle" type="button" data-service-explain data-keep-label aria-expanded="false" aria-controls="faq-agency-platforms">
+              Which platforms should we be on?
+            </button>
+            <div class="service-explainer-details" id="faq-agency-platforms" hidden>
+              <p>The ones your buyers already use, which is usually fewer than you think. Being adequate on five platforms tends to lose to being genuinely good on two.</p>
+              <p>The choice follows the audience and the buying cycle, not the trend. A considered B2B purchase and an impulse consumer product do not belong in the same channel mix.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="service-explainer-toggle faq-toggle" type="button" data-service-explain data-keep-label aria-expanded="false" aria-controls="faq-agency-measure">
+              How do you measure whether it worked?
+            </button>
+            <div class="service-explainer-details" id="faq-agency-measure" hidden>
+              <p>Not with reach and likes. Those move for reasons that have nothing to do with your revenue, which is why they are comfortable to report and easy to hide behind.</p>
+              <p>We agree the real measures before launch: what it costs to generate an enquiry, what it costs to win a customer, and what each rand of ad spend returns. If a number cannot be tied back to the business, it does not belong in the report.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="service-explainer-toggle faq-toggle" type="button" data-service-explain data-keep-label aria-expanded="false" aria-controls="faq-agency-failed">
+              We ran ads before and they did not work. What would be different?
+            </button>
+            <div class="service-explainer-details" id="faq-agency-failed" hidden>
+              <p>Usually one of three things went wrong: the offer was not clear enough to act on, the tracking was never set up so nobody could tell what happened, or one creative execution ran until the audience stopped noticing it.</p>
+              <p>That is what the audit is for. We would rather look at what already ran and tell you which of those it was than sell you the same spend again with a new logo on it.</p>
+            </div>
           </article>
         </div>
       </section>
@@ -210,6 +373,6 @@
       </nav>
     </footer>
 
-    <script src="../js/script.js?v=client-copy-refresh"></script>
+    <script type="module" src="../js/script.js"></script>
   </body>
 </html>
